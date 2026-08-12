@@ -16,6 +16,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Pause
+        run: |
+          sleep 15
+          
       - name: Show tag
         run: |
           echo "Tag: ${{ github.ref_name }}"
