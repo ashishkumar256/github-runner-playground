@@ -9,6 +9,8 @@ on:
 jobs:
   deploy:
     runs-on: infra
+    container:
+      image: ubuntu:latest # or node:18, alpine:latest, etc.    
 
     steps:
       - name: Checkout
